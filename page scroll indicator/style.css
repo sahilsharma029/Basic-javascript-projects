@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'gilroy';
+}
+
+:root{
+    --b: black;
+    --w:white;
+}
+
+body{
+    height: 100vh;
+    background: var(--b);
+    color: var(--w);
+}
+
+.content{
+    border: 1px solid var(--w);
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.scroll-indicator{
+    position:fixed;
+    height: 10px;
+    width: calc(100% - 6em);
+    top: 10px;
+    left: 3em;
+    border-radius: 3px;
+}
+
+.scroll-indicator .progress{
+    height: 100%;
+    width: 0;
+    border-radius: 3px;
+    transition: width 0.1s;
+    background: linear-gradient(10deg, blue, white);
+}
