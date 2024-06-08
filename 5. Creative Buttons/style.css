@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: black;
+}
+
+.btn1{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.btn1:before{
+    content: "Download";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-100%);
+    background: aliceblue;
+    color: #000;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn1:hover::before{
+    transform: translateY(0);
+
+}
+
+
+/* btn2  */
+
+.btn2{
+    text-decoration: none;
+    margin-left: 1rem;
+    color: white;
+    border: 2px solid white;
+    padding: 2rem 4rem;
+    position: relative;
+}
+
+.btn2::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Download";
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: aliceblue;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    transform: rotateX(270deg);
+    transform-origin: top;
+}
+
+.btn2::after{
+    content: "Button";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(232, 237, 224);
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateX(270deg);
+    transform-origin: top;
+    transition: all 0.5s;
+    transition-delay: 0.2s;
+}
+
+.btn2:hover::before, .btn2:hover::after{
+    transform: rotateX(0);
+}
+
+/* btn3 */
+
+.btn3{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+    margin-left: 1rem;
+}
+
+.btn3::before{
+    content: "Download";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotateX(90deg);
+    background: aliceblue;
+    color: #000;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn3:hover::before{
+    transform: rotateX(0);
+}
