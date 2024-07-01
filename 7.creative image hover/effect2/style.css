@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    height: 30rem;
+    width: 30rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 29px;
+}
+
+.container img{
+    width: 100%;
+    transition: all 1s;
+}
+
+.content{
+    position: absolute;
+    /* left: 0; */
+    bottom: 0;
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 1s;
+    background: rgb(23, 23, 23);
+    color: white;
+    letter-spacing: 2px;
+    transform: translateY(100%);
+}
+
+.container:hover .content{
+    transform: translateY(0);
+}
+
+.container:hover img{
+    transform: translateY(-25%);
+}
