@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 135, 0.795);
+    position: relative;
+    overflow: hidden;
+    /* z-index: -1; */
+}
+
+.circle{
+    background-color: aqua;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+    box-shadow: 2px 2px 20px white;
+    /* border: 5px solid white; */
+    border-top: 5px solid aqua;
+    animation: rotate 1s infinite;
+}
+
+.circle1{
+    height: 100px;
+    width: 100px;
+    top: 40px;
+    left: 50px;
+    
+}
+
+.circle2{
+    height: 300px;
+    width: 300px;
+    top: 100px;
+    right: 20px;
+}
+
+.circle3{
+    height: 200px;
+    width: 200px;
+    top: 400px;
+    left: 80px;
+}
+
+.card{
+    height: 500px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.366);
+}
+
+img{
+    height: 200px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.cardborder{
+    border: 1px solid white;
+    border-radius: 20px;
+    height: 460px;
+}
+
+.phase{
+    color: yellow;
+    letter-spacing: 1px;
+    background-color: rgba(255, 255, 255, 0.44);
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+    animation: opaci 2s infinite;
+}
+
+.coursedescribe{
+    color: white;
+    padding-left: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.coursedescribe p{
+    margin-top: 10px;
+}
+
+.enroll{
+    border-top: 1px solid white;
+    margin-top: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+.enroll p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
+    transition: 1s ease-in;
+    animation: opaci 2s infinite;
+}
+
+@keyframes rotate{
+    100%{
+        rotate: 360deg;
+    }
+}
+
+@keyframes opaci{
+    100%{
+        opacity: 1;
+
+    }
+    50%{
+        opacity: 0.6;
+    }
+}
