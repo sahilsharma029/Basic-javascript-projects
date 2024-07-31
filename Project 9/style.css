@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.calculator{
+    border: 1px solid #717377;
+    padding: 20px;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px white;
+}
+
+input{
+    height: 3rem;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    margin-bottom: 15px;
+    font-size: 20px;
+    background: transparent;
+    text-align: right;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.218);
+    color: white;
+}
+
+button{
+    width: 50px;
+    height: 40px;
+    margin: 4px;
+    border: none;
+    outline: 0;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: default;
+}
+
+.eqlbtn{
+    background-color: rgba(168, 255, 168, 0.777);
+}
+
+.operator{
+    background-color: rgba(168, 255, 168, 0.777);
+}
